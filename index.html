@@ -273,7 +273,12 @@
     font-family: 'Space Grotesk', sans-serif; font-weight: 600;
     font-size: 0.88rem; color: var(--off-white); margin-bottom: 3px;
   }
-  .cert-issuer { font-size: 0.78rem; color: var(--slate); }
+  .cert-issuer { font-size: 0.78rem; color: var(--slate); transition: color 0.2s; }
+  .cert-body { flex: 1; min-width: 0; }
+  a.cert-link { text-decoration: none; }
+  a.cert-link:hover { border-color: var(--gold-line); transform: translateY(-2px); }
+  a.cert-link:hover .cert-issuer { color: var(--gold); }
+  a.cert-link:hover .cert-name { color: var(--gold); }
 
   /* ── CONTACT ── */
   #contact { background: var(--navy-mid); }
@@ -606,90 +611,103 @@
     <div class="section-label">CERTIFICATIONS</div>
     <h2 class="section-title">Credentials &<br>ongoing learning.</h2>
     <div class="cert-grid fade-up">
-      <div class="cert-card">
+
+      <a class="cert-card cert-link" href="https://verify.skilljar.com/c/wus537boxtyq" target="_blank" rel="noopener">
         <div class="cert-icon">🤖</div>
-        <div>
-          <div class="cert-name">Claude Platform 101</div>
-          <div class="cert-issuer">Anthropic</div>
-        </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">💻</div>
-        <div>
-          <div class="cert-name">Claude Code 101</div>
-          <div class="cert-issuer">Anthropic</div>
-        </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">💻</div>
-        <div>
+        <div class="cert-body">
           <div class="cert-name">Claude 101</div>
-          <div class="cert-issuer">Anthropic</div>
+          <div class="cert-issuer">Anthropic Academy · View credential ↗</div>
         </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🤖</div>
-        <div>
-          <div class="cert-name">Intoduction to Claude Cowork</div>
-          <div class="cert-issuer">Anthropic</div>
+      </a>
+
+      <a class="cert-card cert-link" href="https://verify.skilljar.com/c/wc7u27r7w5ka" target="_blank" rel="noopener">
+        <div class="cert-icon">⚙️</div>
+        <div class="cert-body">
+          <div class="cert-name">Claude Platform 101</div>
+          <div class="cert-issuer">Anthropic Academy · View credential ↗</div>
         </div>
-      </div>
-      <div class="cert-card">
+      </a>
+
+      <a class="cert-card cert-link" href="https://verify.skilljar.com/c/fbx83z78bmjb" target="_blank" rel="noopener">
         <div class="cert-icon">💻</div>
-        <div>
-          <div class="cert-name">AI Fluency for students</div>
-          <div class="cert-issuer">Anthropic</div>
+        <div class="cert-body">
+          <div class="cert-name">Claude Code 101</div>
+          <div class="cert-issuer">Anthropic Academy · View credential ↗</div>
         </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">💻</div>
-        <div>
-          <div class="cert-name">AI Fluency for educators</div>
-          <div class="cert-issuer">Anthropic</div>
+      </a>
+
+      <a class="cert-card cert-link" href="https://verify.skilljar.com/c/w6ff6ghwey6j" target="_blank" rel="noopener">
+        <div class="cert-icon">🔗</div>
+        <div class="cert-body">
+          <div class="cert-name">Introduction to Subagents</div>
+          <div class="cert-issuer">Anthropic Academy · View credential ↗</div>
         </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🤖</div>
-        <div>
-          <div class="cert-name">Introduction to subagents</div>
-          <div class="cert-issuer">Anthropic</div>
+      </a>
+
+      <a class="cert-card cert-link" href="https://verify.skilljar.com/c/utkermu57njf" target="_blank" rel="noopener">
+        <div class="cert-icon">🤝</div>
+        <div class="cert-body">
+          <div class="cert-name">Introduction to Claude Cowork</div>
+          <div class="cert-issuer">Anthropic Academy · View credential ↗</div>
         </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🤖</div>
-        <div>
-          <div class="cert-name">Introduction to agent skills</div>
-          <div class="cert-issuer">Anthropic</div>
+      </a>
+
+      <a class="cert-card cert-link" href="https://verify.skilljar.com/c/aqjd3mhgdyb6" target="_blank" rel="noopener">
+        <div class="cert-icon">🛠️</div>
+        <div class="cert-body">
+          <div class="cert-name">Introduction to Agent Skills</div>
+          <div class="cert-issuer">Anthropic Academy · View credential ↗</div>
         </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">💻</div>
-        <div>
-          <div class="cert-name">Teaching the AI Fluency Framework</div>
-          <div class="cert-issuer">Anthropic</div>
+      </a>
+
+      <a class="cert-card cert-link" href="https://verify.skilljar.com/c/2cqka3zmusaq" target="_blank" rel="noopener">
+        <div class="cert-icon">📚</div>
+        <div class="cert-body">
+          <div class="cert-name">AI Fluency for Educators</div>
+          <div class="cert-issuer">Anthropic Academy · View credential ↗</div>
         </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">💻</div>
-        <div>
+      </a>
+
+      <a class="cert-card cert-link" href="https://verify.skilljar.com/c/4ge7r4kgzbkj" target="_blank" rel="noopener">
+        <div class="cert-icon">🎓</div>
+        <div class="cert-body">
+          <div class="cert-name">AI Fluency for Students</div>
+          <div class="cert-issuer">Anthropic Academy · View credential ↗</div>
+        </div>
+      </a>
+
+      <a class="cert-card cert-link" href="https://verify.skilljar.com/c/r24nuadykqmt" target="_blank" rel="noopener">
+        <div class="cert-icon">💼</div>
+        <div class="cert-body">
           <div class="cert-name">AI Fluency for Small Businesses</div>
-          <div class="cert-issuer">Anthropic</div>
+          <div class="cert-issuer">Anthropic Academy · View credential ↗</div>
         </div>
-      </div>
+      </a>
+
+      <a class="cert-card cert-link" href="https://verify.skilljar.com/c/qpzk2t6bt966" target="_blank" rel="noopener">
+        <div class="cert-icon">🏫</div>
+        <div class="cert-body">
+          <div class="cert-name">Teaching the AI Fluency Framework</div>
+          <div class="cert-issuer">Anthropic Academy · View credential ↗</div>
+        </div>
+      </a>
+
       <div class="cert-card">
         <div class="cert-icon">🏭</div>
-        <div>
-          <div class="cert-name">Lean Manufacturing Supervisor</div>
+        <div class="cert-body">
+          <div class="cert-name">Lean Manufacturing Supervisor (Kaizen)</div>
           <div class="cert-issuer">BNSP — LSP TMI</div>
         </div>
       </div>
+
       <div class="cert-card">
-        <div class="cert-icon">🎓</div>
-        <div>
+        <div class="cert-icon">🖨️</div>
+        <div class="cert-body">
           <div class="cert-name">D4 Graphic Engineering Technology</div>
           <div class="cert-issuer">Politeknik Negeri Jakarta · GPA 3.72</div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
